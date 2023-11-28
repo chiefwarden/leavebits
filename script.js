@@ -2,7 +2,7 @@ const { degrees, PDFDocument, rgb, StandardFonts } = PDFLib
 
 async function modifyPdf() {
 // Fetch an existing PDF document
-const url = 'https://raw.githubusercontent.com/adityapathak343/bitsleave/main/leave.pdf'
+const url = 'https://raw.githubusercontent.com/chiefwarden/leavebits/main/leave.pdf'
     const existingPdfBytes = await fetch(url).then(res => res.arrayBuffer())
 
 // Load a PDFDocument from the existing PDF bytes
@@ -126,7 +126,7 @@ async function portalDl(){
         return originalString.replace(new RegExp(oldKeyword, 'g'), newKeyword);
     }
     // Example usage
-    url2 = 'https://raw.githubusercontent.com/adityapathak343/bitsleave/main/template.html'
+    url2 = 'https://raw.githubusercontent.com/chiefwarden/leavebits/main/template.html'
 
     fetchFileAsString(url2)
         .then(fileContent => {
